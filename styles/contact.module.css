@@ -1,0 +1,65 @@
+.contactContainer {
+  background-color: #fff;
+  margin: 30px 16px;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.contactContainer p {
+  font-size: 14px;
+  color: rgb(107, 106, 106);
+}
+
+.contactContainer form {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  width: 50%;
+  padding: 0 16px;
+}
+
+.inputBox label {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.inputBox input {
+  all: unset;
+  border: 1px solid rgb(134, 133, 133);
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* وقتی روی input کلیک می‌کنی */
+.inputBox input:focus {
+  border-color: #0070f3;
+  box-shadow: 0 0 3px rgba(0, 112, 243, 0.5);
+}
+
+.inputBox input,
+.inputBox textarea {
+  border: 1px solid rgb(134, 133, 133);
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  resize: vertical; /* کاربر می‌تونه ارتفاعشو تغییر بده */
+  min-height: 100px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* وقتی روی textarea کلیک می‌کنی */
+.inputBox textarea:focus {
+  border-color: #0070f3;
+  box-shadow: 0 0 3px rgba(0, 112, 243, 0.5);
+  outline: none;
+}

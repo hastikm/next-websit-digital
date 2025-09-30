@@ -1,0 +1,16 @@
+.aboutContainer{
+  background-color: white;
+  margin: 30px 16px;
+  padding: 32px 16px;
+  border-radius: 10px;
+}
+
+.aboutContainer h1{
+  margin: 16px 0;
+  text-align: center;
+}
+
+.aboutContainer p{
+  font-size: 14px;
+  color: rgb(59, 59, 59);
+}
