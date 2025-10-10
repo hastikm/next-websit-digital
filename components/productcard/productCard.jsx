@@ -1,4 +1,4 @@
-import styles from './ProductCard.module.css'
+import styles from '../productcard/productCard.module.css'
 function ProductCard({image , text , price}) {
    return (
       <div className={styles.cardContainer}>
