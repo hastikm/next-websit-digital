@@ -39,6 +39,26 @@ export default function Home() {
          )}          
         </div>
 
+      <h1> کنسول بازی(consoles)</h1>
+        <div className="row">
+         {db.consoles.slice(0 , 4).map((console) =>(
+          <div className="col" key={console.id}>
+           <ProductCard {...console}/>
+             </div>
+         )   
+         )}          
+        </div>
+
+      <h1> تبلت (tablets)</h1>
+        <div className="row">
+         {db.tablets.slice(0 , 4).map((tablet) =>(
+          <div className="col" key={tablet.id}>
+           <ProductCard {...tablet}/>
+             </div>
+         )   
+         )}          
+        </div>
+
 
 
    </div>

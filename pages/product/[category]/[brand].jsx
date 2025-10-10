@@ -1,45 +1,38 @@
 import { useRouter } from 'next/router'
 import db from '../../../components/data/db.json'
-import { useState , useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import ProductCard from '@/components/productcard/productCard'
+
 const ProductsByBrand = () => {
+  const { category, brand } = useRouter().query
+  const [products, setProducts] = useState([])
 
-  const {category , brand} = useRouter().query
-  const [laptops , setLaptops] = useState([])
+  useEffect(() => {
+    if (!category || !brand) return
 
-
-
-    useEffect(() => {
-     {
-      setLaptops(getLaptops(brand))
-     
+    const categoryData = db[category] 
+    if (categoryData) {
+      const filtered = categoryData.filter(item => item.brand.toLowerCase() === brand.toLowerCase())
+      setProducts(filtered)
+    } else {
+      setProducts([])
     }
-  }, [brand])
-
-
-        const getLaptops = (brand) => {
-
-          return db.laptops.filter(laptop => laptop.brand == brand)
-
-         }   
-
+  }, [category, brand])
 
   return (
-    <>
-   <div className="container">
-    <div className="section">
-      <h1>laptops- {brand}</h1>
-      <div className="row">
-        {laptops.map(laptop => (
-          <div className="col" key={laptop.id}>
-            < ProductCard {...laptop}/>
-          </div>
-        ))}
+    <div className="container">
+      <div className="section">
+        <h1>{category} - {brand}</h1>
+        <div className="row">
+          {products.map(product => (
+            <div className="col" key={product.id}>
+              <ProductCard {...product}/>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
-   </div>
-    </>
   )
 }
 
-export default ProductsByBrand;
+export default ProductsByBrand

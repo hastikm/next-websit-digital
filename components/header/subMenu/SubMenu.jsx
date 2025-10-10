@@ -2,29 +2,16 @@ import React from "react";
 import Link from "next/link";
 import styles from "../subMenu/SubMenu.module.css";
 
-const SubMenu = () => {
+const SubMenu = ({ items, basePath }) => {
   return (
     <div className={styles.submenu}>
       <div className="container">
         <ul>
-          <li>
-            <Link href={"/product/laptops/asus"}>Asus</Link>
-          </li>
-          <li>
-            <Link href={"/product/laptops/hp"}>HP</Link>
-          </li>
-          <li>
-            <Link href={"/product/laptops/lenovo"}>Lenovo</Link>
-          </li>
-          <li>
-            <Link href={"/product/laptops/apple"}>Apple</Link>
-          </li>
-          <li>
-            <Link href={"/product/laptops/dell"}>Dell</Link>
-          </li>
-          <li>
-            <Link href={"/product/laptops/msi"}>MSI</Link>
-          </li>
+          {items.map((item) => (
+            <li key={item}>
+              <Link href={`${basePath}/${item.toLowerCase()}`}>{item}</Link>
+            </li>
+          ))}
         </ul>
       </div>
     </div>

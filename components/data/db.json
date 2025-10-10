@@ -308,7 +308,7 @@
       {
          "id": 4,
          "image": "https://dl.next1code.ir/images/nextjs/chapter04/camera04.jpg",
-         "text": "دوربین دیجیتال کانن مدل EOS 77D با لنز 135-18 میلیمتر",
+         "text": "دوربین دیجیتال کانن مدل EOS 77D با لنز 135-18 ",
          "price": 18300000,
          "brand": "canon"
       },
@@ -341,6 +341,160 @@
          "brand": "samsung"
       }
    ],
-   "tablets": [],
-   "consoles": []
+   "tablets": [
+       {
+         "id":1,
+         "image":"https://s6.uupload.ir/files/meghdadit[dot]com_(1)_e0bi.jpg",
+         "text":"   تبلت مایکروسافت Surface Pro Snapdragon X Plus ظرفیت 256GB رم 16GB ",
+         "brand": "microsoft",
+         "price":"123,890,000 "
+         
+      },
+      {
+         "id":2,
+         "image":"https://s6.uupload.ir/files/meghdadit[dot]com_(2)_ext5.jpg",
+         "text":" تبلت اپل مدل iPad Pro 12.9 2022 WIFI ظرفیت 256 گیگابایت و رم 8 گیگابایت",
+         "brand": "apple",
+         "price":"114,900,000 "
+         
+      },
+      {
+         "id":3,
+         "image":"https://s6.uupload.ir/files/meghdadit[dot]com_(3)_flu.jpg",
+         "text":" تبلت اپل آیپد پرو 11 اینچ 2021 وای فای با ظرفیت 128 گیگابایت",
+          "brand": "apple",
+         "price":"74600000 "
+         
+      },
+      {
+         "id":5,
+         "image":"https://s6.uupload.ir/files/meghdadit[dot]com_(5)_mx08.jpg",
+         "text":" تبلت مایکروسافت 13 اینچ مدل Surface Pro 8 پردازنده Core i5 رم 8GB حافظه 256GB",
+         "price":"55100000 ",
+         "brand": "microsoft"
+         
+      },
+      {
+         "id":6,
+         "image":"https://s6.uupload.ir/files/meghdadit[dot]com_y664.jpg",
+         "text":" تبلت شیائومی مدل Redmi Pad SE ظرفیت 128 گیگابایت رم 4 گیگابایت ",
+         "brand": "microsoft",
+         "price":"13,900,000  "
+         
+      },
+      {
+         "id":7,
+         "image":"https://s6.uupload.ir/files/meghdadit[dot]com_(4)_l6lj.jpg",
+         "text":" تبلت سامسونگ مدل Galaxy TAB S6 Lite ظرفیت 64 گیگابایت",
+         "price":"40,840,000 ",
+         "brand":"xiaomi"
+         
+      },
+      {
+         "id":8,
+         "image":"https://s6.uupload.ir/files/meghdadit[dot]com_8h47.png",
+         "text":"تبلت سامسونگ مدل Galaxy Tab S9 FE Plus (X610) WiFi ظرفیت ظرفیت 128 گیگابایت رم 8",
+         "price":"74600000 ",
+          "brand":"samsung"
+         
+      }
+   ],
+   "consoles": [
+      {
+         "id":1,
+         "image":"https://s6.uupload.ir/files/meghdadit[dot]com_v81t.png",
+         "text":"کنسول بازی مایکروسافت مدل Xbox Series S با ظرفیت 512 گیگابایت",
+         "brand":"playstation",
+         "price":"39700000 "
+         
+      },
+      {
+         "id":2,
+         "image":"https://s6.uupload.ir/files/meghdadit[dot]com_(1)_eb1.png",
+         "text":" کنسول بازی مایکروسافت مدل Xbox Series X با ظرفیت 1 ترابایت ",
+         "brand":"xbox",
+         "price":"55100000 "
+         
+      },
+      {
+         "id":3,
+         "image":"https://s6.uupload.ir/files/meghdadit[dot]com_ozm.jpg",
+         "text":" مجموعه کنسول بازی سونی مدل PlayStation 5 Slim دیسک خور و پایه   ",
+         "brand":"playstation",
+         "price":"74600000 "
+         
+      },
+      {
+         "id":4,
+         "image":"https://s6.uupload.ir/files/meghdadit[dot]com_(3)_2zf7.jpg",
+         "text":"کنسول بازی نینتندو مدل Switch OLED Model with White Joy-Con ",
+         "brand":"nintendo",
+         "price":"29700000 "
+         
+      },
+      {
+         "id":5,
+         "image":"https://s6.uupload.ir/files/meghdadit[dot]com_(2)_gr4.jpg",
+         "text":"کنسول بازی سونی PS5 Slim دیسک خور باندل یک دسته اضافی",
+         "brand":"playstation",
+         "price":"61500000 "
+         
+      },
+      {
+         "id":6,
+         "image":"https://s6.uupload.ir/files/meghdadit[dot]com_(1)_tki9.jpg",
+         "text":"کنسول بازی سونی PS5 Slim دیسک خور باندل بازی FC 24 و یک دسته اضافی ",
+         "brand":"playstation",
+         "price":"63900000 "
+         
+      },
+      {
+         "id":7,
+         "image":"https://s6.uupload.ir/files/meghdadit[dot]com_(6)_hbx5.jpg",
+         "text":"  هدست گیمینگ سونی پلی استیشن 5 مدل PULSE 3D",
+         "brand":"playstation",
+         "price":"72500000 "
+         
+      },
+      {
+         "id":8,
+         "image":"https://s6.uupload.ir/files/meghdadit[dot]com_(5)_t2pk.jpg",
+         "text":"فرمان بازی لاجیتک مدل جی 29 ",
+         "brand":"playstation",
+         "price":"2,000,000 "
+         
+      },
+      {
+         "id":9,
+         "image":"https://s6.uupload.ir/files/meghdadit[dot]com_(7)_lirq.jpg",
+         "text":"  کنسول بازی دستی ولو مدل Steam Deck OLED ظرفیت 512 گیگابایت و رم 16 گیگابایت ",
+          "brand":"nintendo",
+         "price":"72500000 "
+         
+      },
+      {
+         "id":10,
+         "image":"https://s6.uupload.ir/files/meghdadit[dot]com_(4)_fuvg.jpg",
+         "text":"پایه چند کاره Dobe مدل TYX-0663 برای Xbox Series S",
+         "brand":"xbox",
+         "price":"2,000,000 "
+         
+      },
+      {
+         "id":11,
+         "image":"https://s6.uupload.ir/files/4lxwjs71hwtnqv5tkk21uyuxqdw1z4kxz06b26m5tthqnagcvb[large]_1pst.jpg",
+         "text":" مجموعه کنسول بازی مایکروسافت مدل Xbox Series S ظرفیت 500 گیگابایت به همراه دسته اضافی",
+         "brand":"xbox",
+         "price":"45,900,000 "
+         
+      },
+      {
+         "id":12,
+         "image":"https://s6.uupload.ir/files/meghdadit[dot]com_(8)_y4m.jpg",
+         "brand": "playstation",
+         "text":"پايه شارژ دسته بازی کنسول مدل DualSense مخصوص PlayStation 5",
+         "price":"3,500,000 "
+         
+      }
+   ]
 }

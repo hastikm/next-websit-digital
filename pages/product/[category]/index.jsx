@@ -6,52 +6,42 @@ import styles from '../../../styles/ProductsByCategory.module.css'
 
 function ProductsByCategory() {
     const router = useRouter();
-    const { category } = router.query
+    const { category } = router.query;
 
     const [products, setProducts] = useState([]);
-
-    const [initialProducts, setInitialProducts] = useState([]); 
-    const [searchkey , setSearchkey] = useState('')
+    const [initialProducts, setInitialProducts] = useState([]);
+    const [searchKey, setSearchKey] = useState('');
 
     const getProductsData = (categoryName) => {
-        if (!categoryName) return []
-        const key = categoryName.endsWith('s') ? categoryName : `${categoryName}s`
-        const data = db[key]
-        return Array.isArray(data) ? data : [] 
-    }
+        if (!categoryName) return [];
+        const key = categoryName.endsWith('s') ? categoryName : `${categoryName}s`;
+        const data = db[key];
+        return Array.isArray(data) ? data : [];
+    };
 
     useEffect(() => {
         if (category) {
             const dataToDisplay = getProductsData(category);
-  
-            setInitialProducts(dataToDisplay); 
+            setInitialProducts(dataToDisplay);
             setProducts(dataToDisplay);
-
-            setSearchkey('');
+            setSearchKey('');
         } else {
-             setInitialProducts([]);
-             setProducts([]);
+            setInitialProducts([]);
+            setProducts([]);
         }
-    }, [category]); 
-
+    }, [category]);
 
     useEffect(() => {
-
-        if (searchkey.trim() === '') {
-  
+        if (searchKey.trim() === '') {
             setProducts(initialProducts);
             return;
         }
 
-     
-        const searchproducts = initialProducts.filter(product => 
-         
-            product.text.toLowerCase().includes(searchkey.toLowerCase())
+        const filtered = initialProducts.filter(product =>
+            product.text.toLowerCase().includes(searchKey.toLowerCase())
         );
-
-        setProducts(searchproducts);
-
-    }, [searchkey, initialProducts]); 
+        setProducts(filtered);
+    }, [searchKey, initialProducts]);
 
     if (!category) {
         return <div>در حال بارگذاری دسته‌بندی...</div>;
@@ -61,11 +51,11 @@ function ProductsByCategory() {
         <div className="container">
             <div className={`${styles.searchContainer} section`}>
                 <input 
-                    onChange={(e) => setSearchkey(e.target.value)} 
-                    type="text" 
-                    placeholder="دنبال چی میگردی؟" 
-                    className={styles.search} 
-                    value={searchkey} 
+                    type="text"
+                    placeholder="دنبال چی میگردی؟"
+                    className={styles.search}
+                    value={searchKey}
+                    onChange={(e) => setSearchKey(e.target.value)}
                 />
             </div>
 
@@ -73,17 +63,18 @@ function ProductsByCategory() {
                 <h1>محصولات ({category})</h1>
                 <div className="row">
                     {products.length > 0 ? (
-                        products.map((product) => (
+                        products.map(product => (
                             <div className="col" key={product.id}>
                                 <ProductCard {...product} />
                             </div>
                         ))
                     ) : (
-                         <div>محصولی برای این دسته بندی یافت نشد.</div>
+                        <div>محصولی برای این دسته بندی یافت نشد.</div>
                     )}
                 </div>
             </div>
         </div>
-    )
+    );
 }
+
 export default ProductsByCategory;
