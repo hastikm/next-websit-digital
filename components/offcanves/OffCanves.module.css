@@ -1,50 +1,138 @@
+/* 📦 ساختار کلی منو */
 .offCanvasMenu {
-   height: 100vh;
-   width: 280px;
-   background-color: rgb(255, 255, 255);
-   position: fixed;
-   padding: 0 20px;
-   z-index: 1;
-   top: 0;
-   right: 0;
-   overflow-x: hidden;
-   transition: 0.5s;
-   box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  max-width: 320px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -3px 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0);
+  z-index: 9999;
+  overflow-y: auto;
+  direction: rtl;
 }
+
+/* وقتی منو بسته میشه */
+.closeMenu {
+  transform: translateX(100%);
+}
+
+/* 🔹 هدر بالای منو */
 .offCanvasHeader {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
 }
-.offCanvasHeader svg {
-   cursor: pointer;
+
+.offCanvasHeader h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
 }
-.close {
-   display: none;
-   transition: 0.5s;
+
+.closeIcon {
+  cursor: pointer;
+  transition: color 0.2s ease;
 }
-.closeBtn {
-   text-align: left;
-   padding-top: 10px;
+
+.closeIcon:hover {
+  color: #007b6f;
 }
-.offCanvasMenu h2 {
-   text-align: center;
-   padding: 0 0 15px;
-   border-bottom: 1px dotted rgb(182, 181, 181);
+
+/* 🔹 لیست اصلی منو */
+.menuList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.offCanvasMenu ul {
-   display: flex;
-   flex-direction: column;
-   padding: 10px 0;
+
+/* هر آیتم منو */
+.menuItem {
+  border-bottom: 1px solid #f0f0f0;
+  display: block;
 }
-.offCanvasMenu ul li {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin: 10px 0;
+
+/* عنوان هر آیتم (مثل لپ‌تاپ، موبایل، تبلت) */
+.menuTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  cursor: pointer;
+  position: relative;
 }
-.offCanvasMenu ul li a {
-   text-decoration: none;
-   color: rgb(58, 57, 57);
+
+.menuTitle a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.menuTitle a:hover {
+  color: #007b6f;
+}
+
+/* 🔽 آیکون فلش */
+.arrowIcon {
+  transition: transform 0.3s ease;
+}
+
+.rotateArrow {
+  transform: rotate(180deg);
+}
+
+/* 🔹 ساب‌منو (لیست زیرمنوها) */
+.subMenu {
+  list-style: none;
+  margin: 0;
+  padding: 6px 25px 10px;
+  background: #fafafa;
+  animation: fadeIn 0.3s ease;
+  border-right: 2px solid #e0e0e0;
+  position: relative;
+  display: block;
+}
+
+.subMenu li {
+  padding: 7px 0;
+}
+
+.subMenu a {
+  text-decoration: none;
+  color: #555;
+  font-size: 0.95rem;
+  display: block;
+  transition: color 0.2s ease;
+}
+
+.subMenu a:hover {
+  color: #007b6f;
+}
+
+/* ✨ انیمیشن باز شدن ساب‌منو */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 📱 برای موبایل‌ها */
+@media (max-width: 480px) {
+  .offCanvasHeader h3 {
+    font-size: 1rem;
+  }
+
+  .menuTitle {
+    padding: 12px 15px;
+  }
+
+  .subMenu {
+    padding: 5px 18px 10px;
+  }
 }

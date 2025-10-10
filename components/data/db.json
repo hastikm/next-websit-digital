@@ -345,7 +345,7 @@
        {
          "id":1,
          "image":"https://s6.uupload.ir/files/meghdadit[dot]com_(1)_e0bi.jpg",
-         "text":"   تبلت مایکروسافت Surface Pro Snapdragon X Plus ظرفیت 256GB رم 16GB ",
+         "text":"   تبلت مایکروسافت Surface Pro Snapdragon X Plus     ",
          "brand": "microsoft",
          "price":"123,890,000 "
          
@@ -353,7 +353,7 @@
       {
          "id":2,
          "image":"https://s6.uupload.ir/files/meghdadit[dot]com_(2)_ext5.jpg",
-         "text":" تبلت اپل مدل iPad Pro 12.9 2022 WIFI ظرفیت 256 گیگابایت و رم 8 گیگابایت",
+         "text":" تبلت اپل مدل iPad Pro 12.9 2022 WIFI ظرفیت 256  و رم 8 گیگابایت",
          "brand": "apple",
          "price":"114,900,000 "
          
@@ -361,16 +361,16 @@
       {
          "id":3,
          "image":"https://s6.uupload.ir/files/meghdadit[dot]com_(3)_flu.jpg",
-         "text":" تبلت اپل آیپد پرو 11 اینچ 2021 وای فای با ظرفیت 128 گیگابایت",
+         "text":"    تبلت اپل آیپد پرو 11 اینچ 2021 وای فای با ظرفیت 128 گیگابایت" ,
           "brand": "apple",
-         "price":"74600000 "
+         "price":"74,600,000 "
          
       },
       {
          "id":5,
          "image":"https://s6.uupload.ir/files/meghdadit[dot]com_(5)_mx08.jpg",
-         "text":" تبلت مایکروسافت 13 اینچ مدل Surface Pro 8 پردازنده Core i5 رم 8GB حافظه 256GB",
-         "price":"55100000 ",
+         "text":" تبلت مایکروسافت 13 اینچ مدل Surface Pro 8 پردازنده Core i5 رم  حافظه ",
+         "price":"55,100,000 ",
          "brand": "microsoft"
          
       },
@@ -393,8 +393,8 @@
       {
          "id":8,
          "image":"https://s6.uupload.ir/files/meghdadit[dot]com_8h47.png",
-         "text":"تبلت سامسونگ مدل Galaxy Tab S9 FE Plus (X610) WiFi ظرفیت ظرفیت 128 گیگابایت رم 8",
-         "price":"74600000 ",
+         "text":"تبلت سامسونگ مدل Galaxy Tab S9 FE Plus (X610) WiFi ظرفیت ظرفیت 128   ",
+         "price":"74,600,000 ",
           "brand":"samsung"
          
       }
@@ -459,7 +459,7 @@
       {
          "id":8,
          "image":"https://s6.uupload.ir/files/meghdadit[dot]com_(5)_t2pk.jpg",
-         "text":"فرمان بازی لاجیتک مدل جی 29 ",
+         "text":"فرمان بازی لاجیتک مدل جی 29  PULSE 3D",
          "brand":"playstation",
          "price":"2,000,000 "
          
@@ -467,7 +467,7 @@
       {
          "id":9,
          "image":"https://s6.uupload.ir/files/meghdadit[dot]com_(7)_lirq.jpg",
-         "text":"  کنسول بازی دستی ولو مدل Steam Deck OLED ظرفیت 512 گیگابایت و رم 16 گیگابایت ",
+         "text":"  کنسول بازی دستی ولو مدل Steam Deck OLED ظرفیت 512 گیگابایت و رم 16  ",
           "brand":"nintendo",
          "price":"72500000 "
          
@@ -475,7 +475,7 @@
       {
          "id":10,
          "image":"https://s6.uupload.ir/files/meghdadit[dot]com_(4)_fuvg.jpg",
-         "text":"پایه چند کاره Dobe مدل TYX-0663 برای Xbox Series S",
+         "text":"پایه چند کاره Dobe مدل TYX-0663 برای Xbox Series S Steam Deck OLED",
          "brand":"xbox",
          "price":"2,000,000 "
          
@@ -483,7 +483,7 @@
       {
          "id":11,
          "image":"https://s6.uupload.ir/files/4lxwjs71hwtnqv5tkk21uyuxqdw1z4kxz06b26m5tthqnagcvb[large]_1pst.jpg",
-         "text":" مجموعه کنسول بازی مایکروسافت مدل Xbox Series S ظرفیت 500 گیگابایت به همراه دسته اضافی",
+         "text":" مجموعه کنسول بازی مایکروسافت مدل Xbox Series S ظرفیت 500 گیگابایت    ",
          "brand":"xbox",
          "price":"45,900,000 "
          

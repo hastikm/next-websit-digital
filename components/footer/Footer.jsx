@@ -44,7 +44,7 @@ const Footer = () => {
             </ul>
           </div>
            <div className={`col ${styles.socials}`}>
-            <h4>با ما در اربتیاط باشید</h4>
+            <h4>با ما در ارتباط باشید</h4>
               <ul>
                 <li><FaInstagram /></li>
                 <li><SiTelegram /></li>

@@ -1,65 +1,82 @@
+/* styles/contact.module.css */
+
 .contactContainer {
-  background-color: #fff;
-  margin: 30px 16px;
-  padding: 16px;
+  background: #fff;
+  padding: 30px;
   border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.contactContainer h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #222;
 }
 
 .contactContainer p {
-  font-size: 14px;
-  color: rgb(107, 106, 106);
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #555;
 }
 
-.contactContainer form {
-  margin: 20px 0;
-  display: flex;
-  flex-wrap: wrap;
+.form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
 }
 
 .inputBox {
   display: flex;
   flex-direction: column;
-  margin: 10px 0;
-  width: 50%;
-  padding: 0 16px;
 }
 
-.inputBox label {
-  font-size: 14px;
-  margin: 10px 0;
+.inputBoxFull {
+  grid-column: 1 / -1; /* textarea همه ستون‌ها را می‌گیرد */
+  display: flex;
+  flex-direction: column;
 }
 
-.inputBox input {
-  all: unset;
-  border: 1px solid rgb(134, 133, 133);
-  padding: 10px;
-  border-radius: 10px;
-  box-sizing: border-box;
-  font-size: 14px;
-}
-
-/* وقتی روی input کلیک می‌کنی */
-.inputBox input:focus {
-  border-color: #0070f3;
-  box-shadow: 0 0 3px rgba(0, 112, 243, 0.5);
+.inputBox label,
+.inputBoxFull label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
 }
 
 .inputBox input,
-.inputBox textarea {
-  border: 1px solid rgb(134, 133, 133);
-  padding: 10px;
-  border-radius: 10px;
-  box-sizing: border-box;
-  resize: vertical; /* کاربر می‌تونه ارتفاعشو تغییر بده */
-  min-height: 100px;
-  font-family: inherit;
-  font-size: 14px;
-  line-height: 1.5;
+.inputBoxFull textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s ease;
 }
 
-/* وقتی روی textarea کلیک می‌کنی */
-.inputBox textarea:focus {
-  border-color: #0070f3;
-  box-shadow: 0 0 3px rgba(0, 112, 243, 0.5);
-  outline: none;
+.inputBox input:focus,
+.inputBoxFull textarea:focus {
+  border-color: #008374;
+}
+
+.contactBox {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+  background: #fafafa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.contactBox p {
+  margin: 0;
+  color: #555;
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+
+.contactBox svg {
+  flex-shrink: 0;
 }

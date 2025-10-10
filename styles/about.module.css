@@ -1,16 +1,67 @@
-.aboutContainer{
-  background-color: white;
-  margin: 30px 16px;
-  padding: 32px 16px;
-  border-radius: 10px;
+.aboutContainer {
+  background: #fffefc;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  color: #333;
+  line-height: 1.8;
+  font-family: "IRANSans", sans-serif;
 }
 
-.aboutContainer h1{
-  margin: 16px 0;
+.aboutContainer h1 {
+  font-size: 2.2rem;
   text-align: center;
+  margin-bottom: 30px;
+  color: #008374;
 }
 
-.aboutContainer p{
-  font-size: 14px;
-  color: rgb(59, 59, 59);
+.aboutSection {
+  margin-bottom: 25px;
+  padding-left: 10px;
+  border-left: 4px solid #008374;
+  background: #f0fdf9;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.aboutSection h4 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #444;
+}
+
+.aboutSection p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+  text-align: justify;
+}
+
+.aboutSection a {
+  color: #008374;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.aboutSection a:hover {
+  color: #005f52;
+}
+
+
+@media (max-width: 768px) {
+  .aboutContainer {
+    padding: 25px 15px;
+  }
+
+  .aboutContainer h1 {
+    font-size: 1.8rem;
+  }
+
+  .aboutSection h4 {
+    font-size: 1.1rem;
+  }
+
+  .aboutSection p {
+    font-size: 0.95rem;
+  }
 }
